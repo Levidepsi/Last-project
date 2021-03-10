@@ -162,11 +162,18 @@ h2{
 .container-2{
     display: grid ;
     padding: 10px;
+    margin-bottom: 10px;
 
 }
-.anime-img ul{
+.anime-img ul li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.anime-img ul li{
     list-style: none;
     align-items: center;
+    margin: 10px;
+    font-size: 12px;
 }
 
 .anime-img.desc p{
@@ -176,6 +183,9 @@ h2{
 .anime-img{
     display: grid;
     border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+
 }
 
 .body{
@@ -238,20 +248,57 @@ h2{
 .video p {
     font-size: 13px;
 }
+.name{
+    background: #333;
+    color: gold;
+}
 .episodes{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style: none;
+    font-size: 15px;
     
 }
 
 .related_episodes{
     display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
     list-style: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto auto auto auto ;
+
 }
 
 .number{
     display: grid;
     border: 1px solid white;
+}
+
+.season{
+    list-style: none;
+    border: 1px solid white;
+}
+
+.anime-seasons ul li{
+    list-style: none;
+    font-size: 14px;
+}
+
+.anime-seasons ul li a{
+    color: gold;
+}
+.anime-seasons{
+    padding: 10px;
+}
+
+.border{
+    border-bottom: 1px solid rgb(36, 36, 36);
+    margin-bottom: 20px ;
+}
+.main-footer ul li a{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.year{
+    color: white;
 }
