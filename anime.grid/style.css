@@ -7,6 +7,7 @@
 
 body{
     background-color: #000000;
+    font-size: 15px ;
 }
 
 
@@ -46,7 +47,7 @@ h2{
     background-color: #1b1b1b;
     height: 100%    ;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1050px;
 }
 
 .main-header{
@@ -62,11 +63,12 @@ h2{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 300px;
     padding: 10px;
     width: 100%;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
+    margin-bottom: 100px;
 }
 
 .title{
@@ -119,6 +121,7 @@ h2{
 .content-2 {
     border: 1px solid white;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .content-3{
@@ -126,9 +129,15 @@ h2{
     margin-left: 10px;
 }
 
+.content-4{
+    border: 1px solid white;
+    margin: 0;
+    width: 290px;
+}
+
 .animes ul li{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 165px;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -178,7 +187,124 @@ h2{
     font-size: 12px!important;
 }
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+.ep-num a{
+    color: gold ;
+
+}
+
+.episodes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+
+}
+
+.num{
+    /* 26px!important */
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    display: inline-block;
+    width: 100%;
+}
+
+.episodes a{
+    color: white;
+    background-color: #363636;
+    /* margin: 5px; */
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.episodes a:hover{
+  background-color: gold;
+}
+
+.episodes span{
+    color: #5c5858;
+}
+.episodes ul li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin: 10px;
+    font-size: 11px;
+  
+    /* background-color: #363636; */
+
+}
+
+.anime-seasons ul{
+    list-style: none;
+}
+
+.anime-seasons{
+    padding: 9px;
+    color: rgb(80, 77, 77);
+    list-style: none;
+    font-size: 15px;
+}
+
+.anime-seasons a {
+    color: gold;
+    list-style: none;
+}
+
+.footer{
+    background: url("/img/vien_footer.png") no-repeat;
+    width: 100%;
+    padding: 10px;
+    margin-bottom:3 0px ;
+}
+
+.info ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info ul li{
+    color: #333;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+
+}
+
+.info a{
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.form-control input[type=text] {
+    padding: 6px;
+    font-size: 15px;
+    border: none;
+    background-color: #000;
+}
+
+
+button{
+    font-size: 17px;
+    background-color: #000;
+    color: gold;
+}
+
+
+@media screen and (max-width: 767px) {
     .container{
         display: block;
     }
@@ -187,9 +313,57 @@ h2{
         display: none;
     }
 
-    .content-3{
+    .content-4{
         display: none;
     }
+
+    .nav-bar{
+        display: none;
+    }
+    .form-control input[type=text]{
+        display: none;
+        border: none;
+    }
+    .main-header{
+        display: block!important;
+    }
+    .episodes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .content-2{
+        display: none;
+    }
+
+    .content-4{
+        display: none;
+    }
+
+    .main-header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    }   
+
+}
+
+@media screen and (max-width: 1050px) {
+    .body{
+        font-size: 15px;
+    }
+
+}
+
+
 
 
