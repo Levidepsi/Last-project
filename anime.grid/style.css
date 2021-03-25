@@ -294,6 +294,7 @@ h2{
     font-size: 15px;
     border: none;
     background-color: #000;
+    color: gold;
 }
 
 
@@ -301,6 +302,15 @@ button{
     font-size: 17px;
     background-color: #000;
     color: gold;
+    cursor: pointer;
+}
+
+#btn1{
+    display: none;
+}
+
+.searchbox{
+    display: flex;
 }
 
 
@@ -323,6 +333,24 @@ button{
     .form-control input[type=text]{
         display: none;
         border: none;
+        margin-left:30px ;
+    }
+
+    .searchbox{
+        display: block;
+        align-items: center;
+    }
+
+    #btn1{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        margin-left: 110px;
+    }
+
+    #btn2{
+        display: none;
     }
     .main-header{
         display: block!important;
