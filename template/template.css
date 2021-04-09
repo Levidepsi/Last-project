@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.main-header{
+   display: grid;
+   grid-template-columns: 1fr 200px;
+   padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list-items{
+    list-style: none;
+    color: #b9b4b4;
+    margin-left: 10px;
+
+}
+
+.list-items li {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.list-items li a:hover{
+    color: #798FFF;
+}
+
+.list-items a{
+    color: #b9b4b4;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px ;
+}
+
+h2{
+    font-size: 15px ;
+    margin-bottom: 20px;
+    color: #b9b4b4;
+}
+
+h2 a{
+    color: #000;
+}
+
+h2 a:hover{
+    color:#798FFF;
+}
+
+h5{
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.head-icon{
+    display: flex;
+}
+
+.header-icon{
+    padding: 10px;
+}
+
+.header-icon a {
+    color: grey;
+}
+
+.header-icon a:hover {
+    color: #798FFF;
+}
+.main-body {
+    display: grid;
+    grid-template-columns: 320px 1fr 320px ;
+    background-color: #fff;
+}
+
+.search input{
+    border: none;
+}
+
+.left-content{
+    background-color: #f7f7f7;
+    height: 400vh;
+    padding: 20px;
+}
+
+.search-bar p {
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.psd{
+    color: #5CACDE;
+}
+
+.Illu{
+    color: #B39164;
+}
+
+.sketch{
+    color: #F4C652;
+}
+
+.fonts{
+    color: #ADDA91;
+}
+
+.code{
+    color: #F9896D
+}
+
+.more{
+    color: #b9b4b4;
+}
+
+.adver{
+    margin-top: 50px;
+}
+
+.img-1{
+    padding: 10px;
+    margin-top: 45px;
+}
+
+.middle-content{
+    display: flex;
+}
+
+.content{
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.nav{
+    display: flex;
+    list-style: none;   
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color: #919BA2;
+}
+
+.nav a:hover{
+    color: #798FFF;
+}
+
+.nav span{
+    padding: 3px;
+    color: #919BA2;
+}
